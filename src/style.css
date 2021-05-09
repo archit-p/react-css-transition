@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Orbitron' !important;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 1.4em;
+  font-stretch: condensed;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #bdb2ff;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.transition-fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.transition-fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.transition-fade-exit {
+  opacity: 1;
+}
+
+.transition-fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.box {
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+  padding: 20px;
+}
+
+.box:hover {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  color: black;
+}
+
+button:hover {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.svg-icon svg {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.125em;
+}
+
+.svg-icon-lg svg {
+  width: 2em !important;
+  height: 2em !important;
+  position: relative;
+  top: 0.6em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  font-size: 0.75em;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+.inline-btn {
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+  border-radius: 5px;
+  font-size: 0.5em;
+  padding: 2px 5px;
+  position: relative;
+  bottom: 0.25em;
+}
